@@ -1,0 +1,10 @@
+local BOOST_DIR = "/opt/boost_1_71" ;
+
+exe spirit-x3
+    :
+    main.cpp
+    string_grammar.cpp
+    kv_grammar.cpp
+    :
+    <include>$(BOOST_DIR)/include
+    ;
